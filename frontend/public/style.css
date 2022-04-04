@@ -37,6 +37,7 @@ body{
     height: 100vh;
     width: 100%;
     margin: auto;
+    background-color: black;
 }
 
 /*#loadingPage{
@@ -81,7 +82,7 @@ ul{
     padding: 0;
     width: auto;
     overflow: hidden;
-    background-color: rgb(207, 88, 88);
+    background-color: transparent;
     border-radius: 0 0 2vw 2vw;
 }
   
@@ -93,14 +94,14 @@ li a{
     display: block;
     font-size: 1vw;
     font-family: 'Raleway', sans-serif;
-    color: white;
+    color: rgba(245, 245, 220, 0.851);
     text-align: center;
     padding: 0.6vw 1.8vw;
     text-decoration: none;
 }
 
 li a:hover{
-    background-color: #111;
+    background-color: rgba(17, 17, 17, 0.419);
 }
 
 #homePage h1{
@@ -108,18 +109,81 @@ li a:hover{
     top: 20%;
     left: 8%;
     font-family: 'Raleway', sans-serif;
-    font-size: 3vw;
-    color: #fff;
+    font-size: 4vw;
+    color: rgba(245, 245, 220, 0.922);
 }
 
 #homePage p{
     position: absolute;
     top: 40%;
+    left: 8%;
     font-family: 'Raleway', sans-serif;
-    color: #fff;
+    font-size: 2vw;
+    color: rgba(245, 245, 220, 0.851);
+    line-height: 4vw;
+}
+
+#beersPageSection{
+    height: 100vh;
+    max-width: 100%;
+    margin: auto;
+    font-family: 'Raleway', sans-serif;
+    background-color: black;
 }
 
 #beersPage{
-    max-height: 100vh;
+    display: flex;
+    margin-top: 4vw;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    gap: 2.5vw;
+    row-gap: 4vw;
+}
+
+.flip-card{
+    background-color: transparent;
+    margin-top: 4vw;
+    width: 15vw;
+    height: 15vw;
+    /*perspective: 1000px;*/
+}
+  
+.flip-card-inner{
+    position: relative;
     width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    /*box-shadow: 0 4px 8px 2px rgba(152, 149, 149, 0.066);*/
+}
+
+/*.flip-card:hover{
+    box-shadow: 0 0 10px 0 rgba(52, 51, 51, 0.084);
+}*/
+  
+.flip-card:hover .flip-card-inner{
+    transform: rotateY(180deg);
+}
+  
+.flip-card-front, 
+.flip-card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+  
+.flip-card-front{
+    background-color: black;
+}
+  
+.flip-card-back{
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5vw;
+    background-color: black;
+    color: white;
+    transform: rotateY(180deg);
 }
