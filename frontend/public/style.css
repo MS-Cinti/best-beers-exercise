@@ -1,34 +1,125 @@
+* {
+margin: 0;
+padding: 0;
+border: 0;
+outline: none;
+box-sizing: border-box;
+background: transparent;
+font-family: inherit;
+}
+a{
+text-decoration: none;
+}
+a img {
+border: none;
+}
+
+button,
+a {
+cursor: pointer;
+color: inherit;
+}
+
+textarea {
+resize: none;
+}
+
+button,
+textarea,
+select {
+appearance: none !important;
+border-radius: 0;
+}
+
+/* end of css reset */
+
 body{
-    height: 100%;
+    height: 100vh;
     width: 100%;
     margin: auto;
-    background-color: #e3e3e3;
 }
 
-#flex-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 1vw;
-    font-family: 'Raleway', sans-serif;
-    justify-content: center;
-    text-align: center;
-    gap: 2vw;
+/*#loadingPage{
+    height: 100vh;
+    width: 100%;
 }
 
-.cards{
-    border: 2px solid #c24d2c;
-    width: 15vw;
-    margin: 1vw;
-}
-
-.cards:hover{
-    background-color: #c24d2c;
-}
-
-.img{
-    height: 50%;
-    width: 50%;
+#loadingPage #loadingVideo {
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    object-fit: cover;
     max-height: 100vh;
-    object-fit: scale-down;
+    opacity: 1;
+}*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+#homePage{
+    position: relative;
+    max-height: 100vh;
+    width: 100%;
+}
+
+#homePage #homeVideo{
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    object-fit: cover;
+    max-height: 100vh;
+    opacity: 1;
+}
+
+ul{
+    position: fixed;
+    transform: translate(80%);
+    list-style-type: none;
+    margin: 0;
+    top: 0;
+    padding: 0;
+    width: auto;
+    overflow: hidden;
+    background-color: rgb(207, 88, 88);
+    border-radius: 0 0 2vw 2vw;
+}
+  
+li{
+    float: left;
+}
+  
+li a{
+    display: block;
+    font-size: 1vw;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    text-align: center;
+    padding: 0.6vw 1.8vw;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: #111;
+}
+
+#homePage h1{
+    position: absolute;
+    top: 20%;
+    left: 8%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 3vw;
+    color: #fff;
+}
+
+#homePage p{
+    position: absolute;
+    top: 40%;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+}
+
+#beersPage{
+    max-height: 100vh;
+    width: 100%;
 }

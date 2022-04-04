@@ -6,14 +6,35 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600;700&family=Raleway:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&family=Raleway:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
 	<script src="./dog/script.js"></script>
 	<link rel="stylesheet" href="./dog/style.css">
 	<title>Best Beers</title>
 </head>
 <body>
 	<div id="root">
-		<div id="flex-container"></div>
+		<!--<section id="loadingPage">
+			<video autoplay muted loop id="loadingVideo">
+				<source src="./dog/imagesAndVideos/bestBeersLoadingVideo.mp4" type="video/mp4">			
+			</video>
+		</section>-->
+		<section id="homePage">
+			<video autoplay muted loop id="homeVideo">
+				<source src="./dog/imagesAndVideos/homePage.mp4" type="video/mp4">			
+			</video>
+			<nav>
+				<ul>
+					<li><a href="#homePage">Home</a></li>
+					<li><a href="#beersPage">Our beers</a></li>
+					<li><a href="">Our bars</a></li>
+					<li><a href="">About</a></li>
+					<li><a href="">Contact</a></li>
+				</ul>
+			</nav>
+			<h1>Welcome everyone!</h1>
+			<p>If you love beers, you are in the best place!</p>
+		</section>
+		<section id="beersPage"></section>
 	</div>
 </body>
 </html>
