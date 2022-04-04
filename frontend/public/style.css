@@ -184,6 +184,6 @@ li a:hover{
     font-family: 'Raleway', sans-serif;
     line-height: 1.5vw;
     background-color: black;
-    color: white;
+    color: rgba(245, 245, 220, 0.922);
     transform: rotateY(180deg);
 }
