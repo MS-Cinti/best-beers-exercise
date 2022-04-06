@@ -42,11 +42,9 @@ fetch ("./dog/data.json")
 })
 
 function loadEvent() {
-
+    
     const rootElement = document.getElementById("root");
-
     rootElement.insertAdjacentHTML("beforeend", htmlBody);
-
 }
 
 window.addEventListener("load", loadEvent);
