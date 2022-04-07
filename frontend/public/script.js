@@ -13,7 +13,7 @@ const htmlBody = `
             </ul>
         </nav>
         <h1>Welcome!</h1>
-        <p>If you love beers, you are in the best place!<br> Choose one from our delicious beers and enjoy!</p>
+        <p>If you love beers, you are in the best place!<br> Choose a handcrafted specialty beer from below and enjoy!</p>
     </section>
     <section id="beersPageSection">
         <div id="beersPage"></div>
@@ -42,7 +42,7 @@ fetch ("./dog/data.json")
 })
 
 function loadEvent() {
-    
+
     const rootElement = document.getElementById("root");
     rootElement.insertAdjacentHTML("beforeend", htmlBody);
 }
